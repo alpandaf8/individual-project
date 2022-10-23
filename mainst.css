@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  /* font-family: sans-serif; */
+}
+
+.main-background{
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75));
+  background-size: cover;
+  background-position: center;
+}
+
+.nav-bar{
+  width: 85%;
+  margin: auto;
+  padding: 35px 0;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  position: absolute;
+}
+
+li{
+  display: inline;
+}
+
+.cover-img{
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75));
+  background-size: cover;
+  background-position: center;
+}
+
+.main-background > img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* opacity: 0.7; */
+}
+
+
+
+.logo{
+  width: 120px;
+  cursor: pointer;
+}
+
+.nav-bar >ul li{
+  list-style: none;
+  display: inline-block;
+  margin: 0 20px;
+  position: relative;
+}
+
+.nav-bar >ul, li, a{
+  text-decoration: none;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.nav-bar >ul li::after{
+  content: '';
+  height: 3px;
+  width: 0;
+  background: rgb(250, 248, 84);
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  transition: 0.5s;
+}
+
+.nav-bar >ul li:hover::after{
+  width: 100%;
+}
+
+.content{
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+  color: #ffffff;
+}
+
+.content >h1{
+  font-size: 70px;
+  margin-top: 80px;
+}
+
+.content >p{
+  margin: 20px;
+  font-weight: 100;
+  line-height: 25px;
+}
+
+button{
+  background-color: #FFF0B5 ;
+  /* position: absolute; */
+  padding: 12px;
+  width: 150px;
+  border: none;
+  border-radius: 75px;
+  color: #585a58;
+  font-size: 15px;
+  font-weight: bold;
+}
